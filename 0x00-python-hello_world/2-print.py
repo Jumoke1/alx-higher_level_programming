@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 number = 98
-print(f"{number}, Batterty street,\n")
+print("\"Programming is like building a multilingual puzzle,/n")
