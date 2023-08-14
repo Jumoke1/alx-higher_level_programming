@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
-def replace_in_list(my_list, idx, element):
-    if idx == -1 or idx >= len(my_list):
-        return my_list
-    else:
-        my_list[idx] = element
-        return my_list
+def element_at(my_list, idx):
+    for index in my_list:
+        if idx == -1:
+            return "none"
+        elif idx >= len(my_list):
+            return "none"
+        else:
+            return my_list[idx]
