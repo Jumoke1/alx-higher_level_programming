@@ -9,6 +9,6 @@ def square_matrix_simple(matrix=[]):
         squared_row = []
         for j in range(cols):
             squared_row.append(matrix[i][j] ** 2)
-            squared_m.append(squared_row)
+        squared_m.append(squared_row)
 
-    return squared_m
+    return square_m
