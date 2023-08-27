@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-
-for a in range(100):
-    print(f"{a:02d}", end=", " if a < 99 else "\n")
+for num in range(0, 100):
+    if num == 99:
+        print("{}".format(num))
+    else:
+        print("{:02}".format(num), end=", ")
