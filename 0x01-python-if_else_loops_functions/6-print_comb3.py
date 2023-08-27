@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-for j in range(0, 10):
-    for i in range(1, 10):
-        if j >= i:
+for i in range(0, 10):
+    for j in range(1, 10):
+        if i >= j:
             continue
-        elif j == 8 and i == 9:
-            print("{}{}".format(j, i))
+        elif i == 8 and j == 9:
+            print("{}{}".format(i, j))
         else:
-            print("{}{}, ".format(j, i), end="")
+            print("{}{}, ".format(i, j), end="")
