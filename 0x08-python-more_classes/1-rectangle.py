@@ -9,9 +9,11 @@ class Rectangle:
         """Initialize a new rectangle.
 
         Args:
-            width (int):  size of rectangle.
+            width (int):  width of new rectangle.
+            height (int): height of new rectangle
         """
         self.width = width
+        self.height = height
 
     @property
     def width(self):
