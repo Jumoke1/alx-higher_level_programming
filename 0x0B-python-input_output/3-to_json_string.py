@@ -2,6 +2,7 @@
 """Defines JSONrepresentation of oblect(string"""
 import json
 
+
 def to_json_string(my_obj):
     """Return json reprsentation"""
     json_string = json.dumps(my_obj)
