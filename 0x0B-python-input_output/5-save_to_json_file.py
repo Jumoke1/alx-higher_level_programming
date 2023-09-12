@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Defines an object using JSON representation"""
+import json
 
 
 def save_to_json_file(my_obj, filename):
