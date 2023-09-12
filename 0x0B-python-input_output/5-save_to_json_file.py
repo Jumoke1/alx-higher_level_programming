@@ -11,4 +11,4 @@ def save_to_json_file(my_obj, filename):
         filename: The name of the file
     """
     with open(filename, "w") as f:
-        return json.dumps(my_obj, f)
+        json.dumps(my_obj, f)
