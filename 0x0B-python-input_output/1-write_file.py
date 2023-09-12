@@ -10,6 +10,6 @@ def write_file(filename="", text=""):
         text (str): the text to write to the file.
     Returns:
         Returns no of character.
-    """ 
+    """
     with open(filename, "w", encoding="utf-8") as f:
-         return f.write(text)
+        return f.write(text)
