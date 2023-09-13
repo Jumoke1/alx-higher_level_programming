@@ -114,4 +114,4 @@ testing integer_validator with None
 ...     bg.integer_validator(None, None)
 ... except Exception as err:
 ...     print(err)
-None must be an integer1~
+None must be an integer1
