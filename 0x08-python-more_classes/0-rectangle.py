@@ -2,11 +2,9 @@
 
 """Class rextangle that defines a rectangle"""
 
+
 class Rectangle:
-
-"""
-defines a class rectangle
-
-"""
-
-pass
+    """
+    Defines a class rectangle
+    """
+    pass
