@@ -1,3 +1,4 @@
 #!/usr/bin/node
 const numArgs = process.argv[2];
-console.log(numArgs !== undefined ? numArgs : 'No argument');
+const message = numArgs !== undefined ? numArgs : 'No argument';
+console.log(message);
