@@ -4,10 +4,10 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
-Base = declaratie_base()
+Base = declarative_base()
 
 
-class state(Base):
+class State(Base):
     """Represent a state for mysql database
     __tablename__ (str): The name of the MySQL table to store States.
     id (sqlalchemy.Integer): The state's id.
@@ -15,5 +15,5 @@ class state(Base):
     """
 
     __tablename__ = "states"
-    id = Column (Integer primary_key = True)
-    name = Column (String(128) nullable = false)
+    id = Column(Integer, primary_key=True)
+    name = Column(String(128), nullable=false)
