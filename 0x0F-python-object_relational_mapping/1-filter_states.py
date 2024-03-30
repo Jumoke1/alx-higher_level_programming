@@ -4,24 +4,13 @@
 import MySQLdb
 import sys
 
-if __name__ = '__main__':
+if __name__ == '__main__':
+    db = MySQLdb.connect(host="localhost", user=sys.argv[1], port=3306,
+                         passwd=sys.argv[2], db=sys.argv[3])
+    cur = db.cursor()
 
-db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
-                         passwd=argv[2], db=argv[3])
-cur = db.cursor()
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC")
+    rows = cur.fetchall()
 
-<<<<<<< HEAD
-cur.execute("SELECT * FROM states \
-        WHERE = name LIKE BINARY 'N%' \
-        ORDER BY states.id ASC")
-rows = cur.fetchall();
-
-=======
-cur.execute("SELECT * FROM states\
-        WHERE = name LIKE BINARY 'N%'\
-        ORDER BY states.id ASC")
-
-rows = cur.fetchall();
->>>>>>> e2ffc548ac0aa236d1d41b8e3b6c5ccc76952866
-for row in rows:
-    print(rows)
+    for row in rows:
+        print(row)
