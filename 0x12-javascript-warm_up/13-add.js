@@ -1,5 +1,4 @@
 #!/usr/bin/node
-function add (a, b) {
-console.log(a + b)
-}
-add (a, b);
+global.add = function(num1, num2) {
+    return num1 + num2;
+};
