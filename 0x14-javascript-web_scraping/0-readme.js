@@ -1,6 +1,4 @@
 #!/usr/bin/node
-// a script to read from a file
-
 const filesys = require('fs');
 filesys.readFile(process.argv[2], 'utf-8',
   function (err, data) {
